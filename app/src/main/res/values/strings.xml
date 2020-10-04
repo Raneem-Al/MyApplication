@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Muawen</string>
+    <string name="الطلب">الطلب</string>
+    <string name="رقم_الطلب">رقم الطلب</string>
+    <string name="order_Number_Value">#A112233</string>
+    <string name="الطلب_مرسل">الطلب مرسل</string>
+    <string name="تم_استقبال_طلبك">تم استقبال ءلبك</string>
+    <string name="تنفيذ_الطلب">تنفيذ الطلب</string>
+    <string name="تم_استقبال_الطلب">تم استقبال طلبك</string>
+    <string name="قبول_الطلب">قبول الطلب</string>
+    <string name="جاري_تنفيذ_الطلب">جاري تنفيذ الطلب</string>
+    <string name="توصيل_الطلب">توصيل الطلب</string>
+    <string name="تم_تةصيل_الطلب">تم توصل الطلب</string>
+    <string name="توصيل_الطلبا">تم توصيل الطلب</string>
+    <string name="توصيل">توصيل</string>
+    <string name="الاسم">الاسم</string>
+    <string name="رقم_الجوال">رقم الجوال</string>
+    <string name="احمد_صالح">احمد صالح</string>
+    <string name="_0551111111">0551111111</string>
+    <string name="muawen">muawen</string>
+    <string name="قبول">قبول</string>
+    <string name="تحضير">تحضير</string>
+    <string name="العنوان">العنوان</string>
+    <string name="اطلب">اطلب</string>
+    <string name="لاـيوجد">لا يوجد طلب</string>
+</resources>

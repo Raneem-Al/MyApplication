@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shopper_statu">
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="70dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewPersonName2"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewLocation2"
+        android:layout_width="51dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/العنوان"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPersonName2"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintLeft_toRightOf="@+id/textViewPersonName2"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/muawen"
+            android:background="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:text="@string/الطلب"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTool"
+        android:layout_width="523dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="700dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:ignore="MissingConstraints"> </LinearLayout>
+
+    <TextView
+        android:id="@+id/textOrderNumber"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:gravity="center"
+        android:text="@string/رقم_الطلب"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar" />
+
+    <TextView
+        android:id="@+id/textOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textOrderNumber"
+        app:layout_constraintStart_toStartOf="@id/textOrderNumber"
+        app:layout_constraintTop_toBottomOf="@id/textOrderNumber"/>
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="422dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/colorWhite"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/vieWDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="380dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@id/textOrderNumber"
+        tools:layout_editor_absoluteX="53dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@color/colorPrimary"
+        android:onClick="OrderAccepted"
+        android:text="@string/قبول"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorPrimary"
+        android:onClick="OrderPreparing"
+        android:text="@string/تحضير"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorPrimary"
+        android:onClick="OrderDeliverd"
+        android:text="@string/توصيل"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="@string/الاسم"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/رقم_الجوال"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewPersonNum"
+        android:layout_width="66dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

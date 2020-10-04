@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_Placed">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toRightOf="@+id/textViewName1"
+        app:layout_constraintStart_toStartOf="@+id/vieWDivider1"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/muawen"
+            android:src="@drawable/ic_back"
+            app:tint="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:text="@string/الطلب"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTool2"
+        android:layout_width="523dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="700dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:ignore="MissingConstraints"> </LinearLayout>
+
+    <ListView
+        android:id="@+id/OrderList"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutToolbar1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/vieWDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="474dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Place_Order"
+        android:layout_width="131dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:background="@color/colorPrimary"
+        android:onClick="OrderAccepted"
+        android:text="@string/اطلب"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider1"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/textViewName1"
+        android:layout_width="56dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="@string/الاسم"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vieWDivider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieWDivider1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
